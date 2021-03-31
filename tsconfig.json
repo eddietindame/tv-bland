@@ -26,8 +26,10 @@
       "@/graphql/*": ["graphql/*"],
       "@/pages/*": ["pages/*"],
       "@/styles/*": ["styles/*"],
-      "@/public/*": ["public/*"]
-    },
+      "@/public/*": ["public/*"],
+      "@/test/*": ["test/*"],
+      "@/testUtils": ["test/testUtils.ts"]
+    }
   },
   "exclude": ["node_modules", ".next", "out"],
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "**/*.js"]
