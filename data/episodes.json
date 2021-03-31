@@ -1,0 +1,218 @@
+[
+  {
+    "id": 2042439,
+    "url": "https://www.tvmaze.com/episodes/2042439/elliott-from-earth-1x05-idiosyncratic-induction",
+    "name": "Idiosyncratic Induction",
+    "season": 1,
+    "number": 5,
+    "type": "regular",
+    "airdate": "2021-03-30",
+    "airtime": "09:00",
+    "airstamp": "2021-03-30T13:00:00+00:00",
+    "runtime": 15,
+    "image": null,
+    "summary": "<p>On Elliott's first day at the Hive, he meets the most unusual characters on his adventure so far.</p>",
+    "show": {
+      "id": 52246,
+      "url": "https://www.tvmaze.com/shows/52246/elliott-from-earth",
+      "name": "Elliott from Earth",
+      "type": "Animation",
+      "language": "English",
+      "genres": ["Comedy", "Science-Fiction"],
+      "status": "Running",
+      "runtime": 15,
+      "premiered": "2021-03-29",
+      "officialSite": "https://elliottfromearth.cartoonnetwork.co.uk/",
+      "schedule": {
+        "time": "",
+        "days": []
+      },
+      "rating": {
+        "average": null
+      },
+      "weight": 99,
+      "network": {
+        "id": 11,
+        "name": "Cartoon Network",
+        "country": {
+          "name": "United States",
+          "code": "US",
+          "timezone": "America/New_York"
+        }
+      },
+      "webChannel": null,
+      "dvdCountry": null,
+      "externals": {
+        "tvrage": null,
+        "thetvdb": null,
+        "imdb": null
+      },
+      "image": {
+        "medium": "https://static.tvmaze.com/uploads/images/medium_portrait/298/747331.jpg",
+        "original": "https://static.tvmaze.com/uploads/images/original_untouched/298/747331.jpg"
+      },
+      "summary": "<p><b>Elliott from Earth</b> is a comedy animated series about a young boy who finds himself living on a gigantic spaceship, with all sorts of aliens from around the universe. It's a show about finding your place in the world, even if it's in outer space. Oh, and his best friend is a dinosaur.</p>",
+      "updated": 1617081181,
+      "_links": {
+        "self": {
+          "href": "https://api.tvmaze.com/shows/52246"
+        },
+        "previousepisode": {
+          "href": "https://api.tvmaze.com/episodes/2042440"
+        },
+        "nextepisode": {
+          "href": "https://api.tvmaze.com/episodes/2042441"
+        }
+      }
+    },
+    "_links": {
+      "self": {
+        "href": "https://api.tvmaze.com/episodes/2042439"
+      }
+    }
+  },
+  {
+    "id": 2054362,
+    "url": "https://www.tvmaze.com/episodes/2054362/the-young-and-the-restless-2021-03-30-ep-12076",
+    "name": "Ep. #12076",
+    "season": 2021,
+    "number": 55,
+    "type": "regular",
+    "airdate": "2021-03-30",
+    "airtime": "12:30",
+    "airstamp": "2021-03-30T16:30:00+00:00",
+    "runtime": 60,
+    "image": null,
+    "summary": null,
+    "show": {
+      "id": 4344,
+      "url": "https://www.tvmaze.com/shows/4344/the-young-and-the-restless",
+      "name": "The Young and the Restless",
+      "type": "Scripted",
+      "language": "English",
+      "genres": ["Drama", "Family", "Romance"],
+      "status": "Running",
+      "runtime": 60,
+      "premiered": "1973-03-26",
+      "officialSite": "http://www.cbs.com/shows/the_young_and_the_restless/",
+      "schedule": {
+        "time": "12:30",
+        "days": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"]
+      },
+      "rating": {
+        "average": 6.2
+      },
+      "weight": 96,
+      "network": {
+        "id": 2,
+        "name": "CBS",
+        "country": {
+          "name": "United States",
+          "code": "US",
+          "timezone": "America/New_York"
+        }
+      },
+      "webChannel": null,
+      "dvdCountry": null,
+      "externals": {
+        "tvrage": 6318,
+        "thetvdb": 70328,
+        "imdb": "tt0069658"
+      },
+      "image": {
+        "medium": "https://static.tvmaze.com/uploads/images/medium_portrait/233/583614.jpg",
+        "original": "https://static.tvmaze.com/uploads/images/original_untouched/233/583614.jpg"
+      },
+      "summary": "<p><b>The Young and the Restless</b> revolves around the rivalries, romances, hopes and fears of the residents of the fictional Midwestern metropolis, Genoa City. The lives and loves of a wide variety of characters mingle through the generations, dominated by the Newman, Abbott, Chancellor, Baldwin and Winters families. ­ When The Young and the Restless premiered in 1973, it revolutionized the daytime drama. It continues to set the standard with strong characters, socially conscious storylines, romance and sensuality.</p>",
+      "updated": 1616892558,
+      "_links": {
+        "self": {
+          "href": "https://api.tvmaze.com/shows/4344"
+        },
+        "previousepisode": {
+          "href": "https://api.tvmaze.com/episodes/2050236"
+        },
+        "nextepisode": {
+          "href": "https://api.tvmaze.com/episodes/2054362"
+        }
+      }
+    },
+    "_links": {
+      "self": {
+        "href": "https://api.tvmaze.com/episodes/2054362"
+      }
+    }
+  },
+  {
+    "id": 2055172,
+    "url": "https://www.tvmaze.com/episodes/2055172/days-of-our-lives-2021-03-30-ep-14072",
+    "name": "Ep. #14072",
+    "season": 2021,
+    "number": 62,
+    "type": "regular",
+    "airdate": "2021-03-30",
+    "airtime": "13:00",
+    "airstamp": "2021-03-30T17:00:00+00:00",
+    "runtime": 60,
+    "image": null,
+    "summary": null,
+    "show": {
+      "id": 812,
+      "url": "https://www.tvmaze.com/shows/812/days-of-our-lives",
+      "name": "Days of Our Lives",
+      "type": "Scripted",
+      "language": "English",
+      "genres": ["Drama", "Family", "Romance"],
+      "status": "Running",
+      "runtime": 60,
+      "premiered": "1965-12-09",
+      "officialSite": "http://www.nbc.com/days-of-our-lives",
+      "schedule": {
+        "time": "13:00",
+        "days": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"]
+      },
+      "rating": {
+        "average": 6.4
+      },
+      "weight": 92,
+      "network": {
+        "id": 1,
+        "name": "NBC",
+        "country": {
+          "name": "United States",
+          "code": "US",
+          "timezone": "America/New_York"
+        }
+      },
+      "webChannel": null,
+      "dvdCountry": null,
+      "externals": {
+        "tvrage": 3256,
+        "thetvdb": 70366,
+        "imdb": "tt0058796"
+      },
+      "image": {
+        "medium": "https://static.tvmaze.com/uploads/images/medium_portrait/87/218576.jpg",
+        "original": "https://static.tvmaze.com/uploads/images/original_untouched/87/218576.jpg"
+      },
+      "summary": "<p><b>Days of our Lives</b> is set in the fictitious Midwestern town of Salem. The core families are the Bradys, the Hortons and the DiMeras, and the multi-layered storylines involve elements of romance, adventure, mystery, comedy and drama.</p>",
+      "updated": 1617026539,
+      "_links": {
+        "self": {
+          "href": "https://api.tvmaze.com/shows/812"
+        },
+        "previousepisode": {
+          "href": "https://api.tvmaze.com/episodes/2055171"
+        },
+        "nextepisode": {
+          "href": "https://api.tvmaze.com/episodes/2055172"
+        }
+      }
+    },
+    "_links": {
+      "self": {
+        "href": "https://api.tvmaze.com/episodes/2055172"
+      }
+    }
+  }
+]

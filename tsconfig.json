@@ -28,7 +28,8 @@
       "@/styles/*": ["styles/*"],
       "@/public/*": ["public/*"],
       "@/test/*": ["test/*"],
-      "@/testUtils": ["test/testUtils.ts"]
+      "@/testUtils": ["test/testUtils.tsx"],
+      "@/data/*": ["data/*"]
     }
   },
   "exclude": ["node_modules", ".next", "out"],

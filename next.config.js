@@ -1,6 +1,9 @@
 const path = require('path')
 
 module.exports = {
+    images: {
+        domains: ['static.tvmaze.com', 'via.placeholder.com']
+    },
     sassOptions: {
         includePaths: [
             path.join(__dirname, 'styles'),
