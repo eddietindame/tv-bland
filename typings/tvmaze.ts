@@ -92,7 +92,7 @@ interface Country {
     timezone: string // "America/New_York"
 }
 
-interface ShowSchedule {
+export interface ShowSchedule {
     time: string // "13:30" | ""
     days: string[]
 }

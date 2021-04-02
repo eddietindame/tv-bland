@@ -4,7 +4,7 @@ import Image from 'next/image'
 import { useRouter } from 'next/router'
 import Skeleton from 'react-loading-skeleton'
 
-import { getShowWithCastById } from '@/helpers/tvmaze'
+import { getShowWithCastById, formatSchedule } from '@/helpers/tvmaze'
 import { ShowWithCast } from '@/typings/tvmaze'
 import StarRating from '@/components/StarRating'
 import ItemList from '@/components/ItemList'
@@ -174,12 +174,7 @@ export const ShowPage = ({
                                     {
                                         key: 'Schedule',
                                         value: show?.schedule.days.length
-                                            ? show?.schedule.days
-                                                  .map(day => day + 's')
-                                                  .join(', ') +
-                                              (show?.schedule.time
-                                                  ? ` at ${show?.schedule.time}`
-                                                  : '')
+                                            ? formatSchedule(show?.schedule)
                                             : 'Not available'
                                     },
                                     {
