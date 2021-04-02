@@ -16,7 +16,7 @@ const TvShowItem: React.FunctionComponent<T.TvShowItemProps> = (
                 src={
                     props.episode.show.image?.medium ||
                     props.episode.show.image?.original ||
-                    'https://via.placeholder.com/210x295'
+                    '/img/placeholder.jpg'
                 }
                 alt={props.episode.show.name}
                 width={210}
@@ -25,7 +25,7 @@ const TvShowItem: React.FunctionComponent<T.TvShowItemProps> = (
             <StarRating
                 className={S['tv-show-item__rating']}
                 rating={props.episode.show.rating.average}
-                data-testid={'poop'}
+                compact
             />
             <p className={S['tv-show-item__title']}>
                 {props.episode.show.name}

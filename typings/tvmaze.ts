@@ -1,4 +1,10 @@
-export type ScheduleResponse = Episode[]
+export type Schedule = Episode[]
+
+export interface ShowWithCast extends Show {
+    _embedded: {
+        cast: Cast
+    }
+}
 
 export interface Episode {
     id: number
@@ -17,7 +23,7 @@ export interface Episode {
     _links: Links
 }
 
-export interface Show {
+interface Show {
     id: number
     url: string // Url
     name: string
@@ -41,37 +47,67 @@ export interface Show {
     _links: Links
 }
 
-export interface Image {
+type Cast = CastMember[]
+
+interface CastMember {
+    person: Person
+    character: Character
+    self: boolean
+    voice: boolean
+}
+
+interface Person {
+    id: number
+    url: string
+    name: string
+    country: Country
+    birthday: string
+    deathday: string | null
+    gender: string
+    image: Image
+    _links: Links
+}
+
+interface Character {
+    id: number
+    url: string
+    name: string
+    image: Image
+    _links: Links
+}
+interface Image {
     medium: string // Url
     original: string // Url
 }
 
-export interface Links {
+interface Links {
     self: { href: string }
     previousepisode?: { href: string }
     nextepisode?: { href: string }
 }
 
-export interface ShowSchedule {
+interface Country {
+    name: string
+    code: string // "US"
+    timezone: string // "America/New_York"
+}
+
+interface ShowSchedule {
     time: string // "13:30" | ""
     days: string[]
 }
 
-export interface ShowRating {
+interface ShowRating {
     average: number | null
 }
 
-export interface ShowNetwork {
+interface ShowNetwork {
     id: number
     name: string
-    country: {
-        name: string
-        code: string // "US"
-        timezone: string // "America/New_York"
-    }
+    country: Country
 }
 
-export interface ShowExternals {
+interface ShowExternals {
     tvrage: number | null
     thetvdb: number | null
     imdb: string | null

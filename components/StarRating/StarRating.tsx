@@ -43,6 +43,9 @@ const StarRating: React.FunctionComponent<T.StarRatingProps> = (
                     {star}
                 </span>
             ))}
+            {!props.compact && (
+                <span className={S['star-rating__text']}> {rating}/5</span>
+            )}
         </div>
     )
 }

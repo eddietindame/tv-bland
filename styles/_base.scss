@@ -1,4 +1,47 @@
+:root {
+    font-size: 15px;
+
+    @include media-breakpoint-up(md) {
+        font-size: 20px;
+    }
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+footer {
+    padding: 15px;
+    font-size: 0.6em;
+}
+
+h1 { font-weight: bold; }
+
+h1, h3 {
+    font-size: 20px;
+
+    @include media-breakpoint-up(md) {
+        font-size: 30px;
+    }
+}
+
+h2 {
+    font-size: 20px;
+
+    @include media-breakpoint-up(md) {
+        font-size: 50px;
+    }
+}
+
 img {
     display: block;
     max-width: 100%;
+}
+
+a {
+    color: inherit;
+
+    &:hover, &:active, &:focus {
+        text-decoration: underline;
+    }
 }
