@@ -1,5 +1,6 @@
 import { GetStaticPaths, GetStaticProps, InferGetStaticPropsType } from 'next'
 import Head from 'next/head'
+import Link from 'next/link'
 import Image from 'next/image'
 import { useRouter } from 'next/router'
 import Skeleton from 'react-loading-skeleton'
@@ -94,12 +95,18 @@ export const ShowPage = ({
                 </Head>
             )}
 
-            <section className="bg show-layout-top">
-                <div className="container">
-                    <h1 className="show-layout-top__heading">TV Bland</h1>
+            <section className="show-layout-top bg">
+                <div className="show-layout-top__inner">
+                    <h1 className="show-layout-top__heading">
+                        <Link href="/">
+                            <a className="show-layout-top__heading__anchor">
+                                TV Bland
+                            </a>
+                        </Link>
+                    </h1>
 
-                    <div className="row">
-                        <div className="show-layout-top__image-wrap col-12 col-sm-6 col-md-5 col-lg-4 col-xl-3">
+                    <div className="grid-row">
+                        <div className="show-layout-top__image-wrap">
                             {isFallback ? (
                                 <div className="aspect-ratio">
                                     <Skeleton />
@@ -117,7 +124,7 @@ export const ShowPage = ({
                                 />
                             )}
                         </div>
-                        <div className="show-layout-top__info-wrap col-12 col-sm-6 col-md-7 col-lg-8 col-xl-9">
+                        <div className="show-layout-top__info-wrap">
                             {isFallback ? (
                                 <>
                                     <div className="show-layout-top__rating show-layout-top__rating--fallback">
@@ -151,10 +158,11 @@ export const ShowPage = ({
                     </div>
                 </div>
             </section>
+
             <section className="show-layout-bottom">
-                <div className="container">
-                    <div className="row">
-                        <div className="col-12 col-sm-6">
+                <div className="show-layout-top__inner">
+                    <div className="grid-row">
+                        <div className="show-layout-bottom__col">
                             {isFallback ? (
                                 <h3 style={{ width: '40%' }}>
                                     <Skeleton />
@@ -192,7 +200,7 @@ export const ShowPage = ({
                                 mobileGrid
                             />
                         </div>
-                        <div className="col-12 col-sm-6">
+                        <div className="show-layout-bottom__col">
                             {isFallback ? (
                                 <h3 style={{ width: '40%' }}>
                                     <Skeleton />
@@ -232,8 +240,9 @@ export const ShowPage = ({
                     </div>
                 </div>
             </section>
+
             <footer>
-                <div className="container text-center">
+                <div className="grid-container text-center">
                     &copy; TV Bland {new Date().getFullYear()} |{' '}
                     <a href="#">Cookies</a> | <a href="#">Privacy</a>
                 </div>

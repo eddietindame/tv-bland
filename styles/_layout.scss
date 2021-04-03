@@ -1,39 +1,166 @@
 #__next {}
 
+.grid-container {
+    @include make-container();
+    @include make-container-max-widths;
+}
+
+.grid-row { @include make-row(); }
 
 .bg {
     background: #ff7e5f;
     background: linear-gradient(to right, #ff7e5f, #feb47b);
 }
 
+.home-layout-top {
+    padding-top: 30px;
+    padding-bottom: 30px;
+
+    @include media-breakpoint-up(sm) {
+        height: 500px;
+        padding-top: 60px;
+        padding-bottom: 150px;
+    }
+
+    &__inner {
+        @include make-container();
+        @include make-container-max-widths;
+    }
+
+    &__heading {
+        font-size: 20px;
+        margin-bottom: 30px;
+        letter-spacing: 0.5px;
+        line-height: 1;
+
+        @include media-breakpoint-up(sm) {
+            font-size: 30px;
+        }
+    }
+
+    &__blurb {
+        margin: 0;
+        font-size: 20px;
+        letter-spacing: 0.33px;
+        line-height: 25px;
+        color: #8B8B8B;
+
+        @include media-breakpoint-up(sm) {
+            padding: 30px 0 90px;
+            font-size: 30px;
+            letter-spacing: 0.5px;
+            line-height: 40px;
+        }
+
+        @include media-breakpoint-up(xl) {
+            width: 80%;
+        }
+    }
+}
+
+.home-layout-bottom {
+    padding-top: 30px;
+    line-height: 1;
+
+    @include media-breakpoint-up(sm) {
+        position: relative;
+        top: -150px;
+    }
+
+    &__inner {
+        @include make-container();
+        @include make-container-max-widths;
+    }
+
+    &__heading {
+        font-size: 20px;
+
+        @include media-breakpoint-up(sm) {
+            font-size: 30px;
+            margin-bottom: 1em;
+        }
+    }
+}
+
 .show-layout-top {
     padding-top: 30px;
 
+    @include media-breakpoint-up(sm) {
+        padding-top: 60px;
+    }
+
+    @include media-breakpoint-up(xl) {
+        height: 500px;
+    }
+
+    &__inner {
+        @include make-container();
+        @include make-container-max-widths;
+    }
+
     &__heading {
         margin-bottom: 30px;
+        letter-spacing: 0.5px;
+
+        &__anchor {
+
+            &:hover, &:active, &:focus {
+                text-decoration: none;
+                color: inherit;
+            }
+        }
     }
 
     &__image-wrap {
+        @include make-col-ready;
+
+        @include make-col(12);
 
         @include media-breakpoint-up(sm) {
+            @include make-col(6);
+
             position: relative;
             top: 30px;
+        }
+
+        @include media-breakpoint-up(md) {
+            @include make-col(5);
+        }
+
+        @include media-breakpoint-up(lg) {
+            @include make-col(4);
+        }
+
+        @include media-breakpoint-up(xl) {
+            @include make-col(3);
         }
     }
 
     &__info-wrap {
+        @include make-col-ready;
+
+        @include make-col(12);
+
         padding-top: 20px;
         padding-bottom: 30px;
 
         @include media-breakpoint-up(sm) {
+            @include make-col(6);
+
             padding-top: 60px;
         }
 
+        @include media-breakpoint-up(md) {
+            @include make-col(7);
+        }
+
         @include media-breakpoint-up(lg) {
-            padding-right: 65px;
+            @include make-col(8);
         }
 
         @include media-breakpoint-up(xl) {
+            @include make-col(9);
+
             padding-right: 155px;
         }
     }
@@ -56,22 +183,30 @@
     &__summary {
         max-height: 165px;
         overflow-y: auto;
+        letter-spacing: 0.15px;
+        line-height: 20px;
 
         @include media-breakpoint-up(sm) {
+            letter-spacing: 0.2px;
+            line-height: 30px;
             max-height: 200px;
+            max-height: 165px;
         }
 
         @include media-breakpoint-up(md) {
             max-height: 180px;
+            max-height: 120px;
         }
 
         @include media-breakpoint-up(lg) {
             max-height: 200px;
+            max-height: 160px;
             padding-right: 15px;
         }
 
         @include media-breakpoint-up(xl) {
             max-height: 165px;
+            max-height: 120px;
         }
 
         p:last-child {
@@ -85,6 +220,21 @@
 
     @include media-breakpoint-up(sm) {
         padding-top: 60px;
+    }
+
+    &__inner {
+        @include make-container();
+        @include make-container-max-widths;
+    }
+
+    &__col {
+        @include make-col-ready;
+
+        @include make-col(12);
+
+        @include media-breakpoint-up(sm) {
+            @include make-col(6);
+        }
     }
 }
 

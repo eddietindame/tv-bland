@@ -16,19 +16,12 @@ const ShowList: React.FunctionComponent<T.ShowListProps> = (
 
     return (
         <div className={classList([props.className, S['show-list']])}>
-            <div className={classList([S['show-list__inner'], 'row'])}>
+            <div className={classList([S['show-list__inner'], 'grid-row'])}>
                 {data
                     ? data.map(episode => (
                           <TVShowItem
                               key={episode.id}
-                              className={classList([
-                                  S['show-list__item'],
-                                  'col-xl-2',
-                                  'col-lg-3',
-                                  'col-md-4',
-                                  'col-sm-6',
-                                  'col-6'
-                              ])}
+                              className={S['show-list__item']}
                               episode={episode}
                               testId={T.SHOW_ITEM_TEST_ID}
                           />
@@ -38,14 +31,7 @@ const ShowList: React.FunctionComponent<T.ShowListProps> = (
                           .map((_e, i) => (
                               <TVShowItem
                                   key={i}
-                                  className={classList([
-                                      S['show-list__item'],
-                                      'col-xl-2',
-                                      'col-lg-3',
-                                      'col-md-4',
-                                      'col-sm-6',
-                                      'col-6'
-                                  ])}
+                                  className={S['show-list__item']}
                                   testId={T.SHOW_ITEM_FALLBACK_TEST_ID}
                               />
                           ))}
