@@ -1,13 +1,22 @@
 .star-rating {
+    display: flex;
+    align-items: center;
 
     &__star {
+        display: flex;
+        align-items: center;
+        width: 1em;
+        height: 1em;
+        margin-right: 0.25em;
+        margin-bottom: 2px;
 
-        &--unfilled {
-            opacity: 0.5;
-        }
+        &--unfilled { opacity: 0.3; }
     }
     
     &__text {
+        display: flex;
+        align-items: center;
+        margin-left: 0.25em;
         font-weight: bold;
     }
 }

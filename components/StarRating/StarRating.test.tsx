@@ -43,7 +43,7 @@ describe('StarRating', () => {
 
         ratings.forEach(rating => {
             const { getByText } = render(<StarRating rating={rating} />)
-            const text = getByText(` ${Math.ceil(rating / 2)}/5`)
+            const text = getByText(`${Math.ceil(rating / 2)}/5`)
 
             expect(text).toBeDefined()
             cleanup()
@@ -53,6 +53,6 @@ describe('StarRating', () => {
     it('Shows no text in compact mode', () => {
         const { getByText } = render(<StarRating rating={10} compact />)
 
-        expect(() => getByText(' 5/5')).toThrow()
+        expect(() => getByText('5/5')).toThrow()
     })
 })
