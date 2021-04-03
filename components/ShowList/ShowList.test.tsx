@@ -6,7 +6,7 @@ import { cache } from 'swr'
 import { render, waitFor } from '@/testUtils'
 import episodes from '@/data/episodes.json'
 import ShowList from './ShowList'
-import { SHOW_LIST_TESTING_ID } from './ShowList.types'
+import { SHOW_ITEM_TEST_ID, SHOW_ITEM_FALLBACK_TEST_ID } from './ShowList.types'
 
 const server = setupServer(
     rest.get('https://api.tvmaze.com/schedule', (_req, res, ctx) => {
@@ -27,20 +27,22 @@ afterEach(() => {
 afterAll(() => server.close())
 
 describe('ShowList', () => {
-    it('renders loading text', () => {
-        const { getByText } = render(<ShowList />)
-        expect(getByText('Loading tv shows...')).toBeDefined()
+    it('renders fallback items', () => {
+        const { queryAllByTestId } = render(<ShowList />)
+        expect(queryAllByTestId(SHOW_ITEM_FALLBACK_TEST_ID)).toHaveLength(18)
     })
 
-    it('renders items', async () => {
-        const { getByText, getByTestId } = render(<ShowList />)
-        expect(getByText('Loading tv shows...')).toBeDefined()
+    it('renders items on success', async () => {
+        const { queryAllByTestId } = render(<ShowList />)
+        expect(queryAllByTestId(SHOW_ITEM_FALLBACK_TEST_ID)).toHaveLength(18)
         await waitFor(() => {
-            expect(getByTestId(SHOW_LIST_TESTING_ID)).toBeDefined()
+            expect(
+                queryAllByTestId(SHOW_ITEM_TEST_ID).length
+            ).toBeGreaterThanOrEqual(1)
         })
     })
 
-    it('renders error message', async () => {
+    it('renders error message on failure', async () => {
         server.use(
             rest.get('https://api.tvmaze.com/schedule', (_req, res, ctx) => {
                 return res(
@@ -50,8 +52,8 @@ describe('ShowList', () => {
                 )
             })
         )
-        const { getByText } = render(<ShowList />)
-        expect(getByText('Loading tv shows...')).toBeDefined()
+        const { queryAllByTestId, getByText } = render(<ShowList />)
+        expect(queryAllByTestId(SHOW_ITEM_FALLBACK_TEST_ID)).toHaveLength(18)
         await waitFor(() => {
             expect(
                 getByText('There was an error fetching tv shows.')

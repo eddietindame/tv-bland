@@ -2,4 +2,5 @@ export interface ShowListProps {
     className?: string
 }
 
-export const SHOW_LIST_TESTING_ID = 'SHOW_LIST_TESTING_ID'
+export const SHOW_ITEM_TEST_ID = 'SHOW_ITEM_TEST_ID',
+    SHOW_ITEM_FALLBACK_TEST_ID = 'SHOW_ITEM_FALLBACK_TEST_ID'
