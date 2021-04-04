@@ -1,6 +1,7 @@
 import Head from 'next/head'
 
 import ShowList from '@/components/ShowList'
+import Footer from '@/components/Footer'
 
 export const Home = (): JSX.Element => {
     return (
@@ -31,12 +32,7 @@ export const Home = (): JSX.Element => {
                 </div>
             </section>
 
-            <footer>
-                <div className="grid-container text-center">
-                    &copy; TV Bland {new Date().getFullYear()} |{' '}
-                    <a href="#">Cookies</a> | <a href="#">Privacy</a>
-                </div>
-            </footer>
+            <Footer />
         </>
     )
 }

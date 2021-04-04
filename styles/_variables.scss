@@ -1,0 +1,6 @@
+$footerHeight: 50px;
+
+@mixin bg() {
+    background: #ff7e5f;
+    background: linear-gradient(to right, #ff7e5f, #feb47b);
+}

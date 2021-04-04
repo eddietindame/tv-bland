@@ -1,4 +1,8 @@
-#__next {}
+#__next {
+    position: relative;
+    min-height: 100vh;
+    padding-bottom: $footerHeight;
+}
 
 .grid-container {
     @include make-container();

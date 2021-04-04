@@ -1,0 +1,22 @@
+.footer {
+    @include bg();
+
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: $footerHeight;
+
+    &__inner {
+        @include make-container();
+        @include make-container-max-widths;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+    }
+
+    &__separator { padding: 0 1em; }
+}

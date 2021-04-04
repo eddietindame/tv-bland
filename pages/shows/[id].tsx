@@ -9,6 +9,7 @@ import { getShowWithCastById, formatSchedule } from '@/helpers/tvmaze'
 import { ShowWithCast } from '@/typings/tvmaze'
 import StarRating from '@/components/StarRating'
 import ItemList from '@/components/ItemList'
+import Footer from '@/components/Footer'
 
 export const getStaticPaths: GetStaticPaths = async () => {
     return { paths: [], fallback: true }
@@ -241,12 +242,7 @@ export const ShowPage = ({
                 </div>
             </section>
 
-            <footer>
-                <div className="grid-container text-center">
-                    &copy; TV Bland {new Date().getFullYear()} |{' '}
-                    <a href="#">Cookies</a> | <a href="#">Privacy</a>
-                </div>
-            </footer>
+            <Footer />
         </>
     )
 }
