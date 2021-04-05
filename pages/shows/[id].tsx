@@ -46,7 +46,7 @@ export const ShowPage = ({
                     </title>
                     <meta
                         name="description"
-                        content={`TV Bland page for information on ${show.name}`}
+                        content={`TV Bland page for information on ${show.name}.`}
                     />
                     <meta
                         name="keywords"
@@ -73,7 +73,7 @@ export const ShowPage = ({
                     <meta
                         key="og:description"
                         property="og:description"
-                        content={`TV Bland page for information on ${show.name}`}
+                        content={`TV Bland page for information on ${show.name}.`}
                     />
                     <meta
                         key="og:image"
