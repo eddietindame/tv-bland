@@ -1,5 +1,6 @@
 import Head from 'next/head'
 
+import { HOST } from '@/config'
 import ShowList from '@/components/ShowList'
 import Footer from '@/components/Footer'
 
@@ -7,11 +8,11 @@ export const Home = (): JSX.Element => {
     return (
         <>
             <Head>
-                <title>TV Bland</title>
-                <link rel="icon" href="/favicon.ico" />
+                <link rel="canonical" href={HOST} />
+                <meta key="og:url" property="og:url" content={HOST} />
             </Head>
 
-            <section className="home-layout-top bg">
+            <section className="home-layout-top">
                 <div className="home-layout-top__inner">
                     <h1 className="home-layout-top__heading">TV Bland</h1>
                     <p className="home-layout-top__blurb">

@@ -1,3 +1,5 @@
+$topSectionHeight: 500px;
+
 #__next {
     position: relative;
     min-height: 100vh;
@@ -11,19 +13,17 @@
 
 .grid-row { @include make-row(); }
 
-.bg {
-    background: #ff7e5f;
-    background: linear-gradient(to right, #ff7e5f, #feb47b);
-}
-
 .home-layout-top {
+    @include bg();
+
     padding-top: 30px;
     padding-bottom: 30px;
 
     @include media-breakpoint-up(sm) {
-        height: 500px;
+        height: $topSectionHeight;
         padding-top: 60px;
         padding-bottom: 150px;
+        margin-bottom: -150px;
     }
 
     &__inner {
@@ -64,12 +64,8 @@
 
 .home-layout-bottom {
     padding-top: 30px;
+    padding-bottom: 30px;
     line-height: 1;
-
-    @include media-breakpoint-up(sm) {
-        position: relative;
-        top: -150px;
-    }
 
     &__inner {
         @include make-container();
@@ -87,19 +83,21 @@
 }
 
 .show-layout-top {
+    @include bg();
+
     padding-top: 30px;
 
     @include media-breakpoint-up(sm) {
+        height: $topSectionHeight;
         padding-top: 60px;
-    }
-
-    @include media-breakpoint-up(xl) {
-        height: 500px;
     }
 
     &__inner {
         @include make-container();
-        @include make-container-max-widths;
+
+        @include media-breakpoint-up(lg) {
+            @include make-container-max-widths;
+        }
     }
 
     &__heading {
@@ -123,20 +121,32 @@
         @include media-breakpoint-up(sm) {
             @include make-col(6);
 
+            width: 50%;
+            max-width: 300px;
+
             position: relative;
-            top: 30px;
         }
 
         @include media-breakpoint-up(md) {
             @include make-col(5);
+
+            width: unset;
+            width: 41.6666666667%;
+            max-width: 300px;
         }
 
         @include media-breakpoint-up(lg) {
             @include make-col(4);
+
+            width: unset;
+            width: 33.3333333333%;
+            max-width: 300px;
         }
 
         @include media-breakpoint-up(xl) {
             @include make-col(3);
+
+            top: 30px;
         }
     }
 
@@ -151,15 +161,24 @@
         @include media-breakpoint-up(sm) {
             @include make-col(6);
 
+            flex: 1;
+            max-width: unset;
+
             padding-top: 60px;
         }
 
         @include media-breakpoint-up(md) {
             @include make-col(7);
+
+            flex: 1;
+            max-width: unset;
         }
 
         @include media-breakpoint-up(lg) {
             @include make-col(8);
+
+            flex: 1;
+            max-width: unset;
         }
 
         @include media-breakpoint-up(xl) {
@@ -221,6 +240,7 @@
 
 .show-layout-bottom {
     padding-top: 30px;
+    padding-bottom: 30px;
 
     @include media-breakpoint-up(sm) {
         padding-top: 60px;

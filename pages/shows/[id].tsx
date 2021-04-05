@@ -5,6 +5,7 @@ import Image from 'next/image'
 import { useRouter } from 'next/router'
 import Skeleton from 'react-loading-skeleton'
 
+import { HOST, TITLE, KEY_WORDS } from '@/config'
 import { getShowWithCastById, formatSchedule } from '@/helpers/tvmaze'
 import { ShowWithCast } from '@/typings/tvmaze'
 import StarRating from '@/components/StarRating'
@@ -35,68 +36,59 @@ export const ShowPage = ({
     show
 }: InferGetStaticPropsType<typeof getStaticProps>) => {
     const { isFallback } = useRouter()
-    const HOST = 'http://localhost:3000'
 
     return (
         <>
-            <Head>
-                <meta charSet="UTF-8" />
-                <meta
-                    name="viewport"
-                    content="width=device-width, initial-scale=1.0"
-                />
-                <meta httpEquiv="X-UA-Compatible" content="ie=edge" />
-
-                <title>Fetching show... | TV Bland</title>
-                <link rel="icon" href="/favicon.ico" />
-
-                <meta
-                    httpEquiv="Content-Type"
-                    content="text/html; charset=utf-8"
-                />
-                <meta name="referrer" content="always" />
-                <meta
-                    name="keywords"
-                    content="tv bland maze tvmaze television show shows series web"
-                />
-
-                <meta property="og:type" content="website" />
-                <meta property="og:locale" content="en_gb" />
-                <meta property="og:title" content="TV Bland" />
-                <meta
-                    property="og:description"
-                    content="Get info on your favourite TV shows!"
-                />
-                <meta property="og:site_name" content="TV Bland" />
-            </Head>
-
             {show && (
                 <Head>
-                    <title>{show.name} | TV Bland</title>
+                    <title>
+                        {show.name} | {TITLE}
+                    </title>
                     <meta
                         name="description"
-                        content={`TV Bland page for ${show.name}`}
+                        content={`TV Bland page for information on ${show.name}`}
                     />
-                    <link rel="canonical" href={HOST} />
+                    <meta
+                        name="keywords"
+                        content={[
+                            ...KEY_WORDS,
+                            show.name,
+                            ...show.genres,
+                            show.network.name,
+                            show.language
+                        ].join(' ')}
+                    />
+                    <link rel="canonical" href={`${HOST}/shows/${show.id}`} />
 
                     <meta
+                        key="og:url"
                         property="og:url"
                         content={`${HOST}/shows/${show.id}`}
                     />
                     <meta
+                        key="og:title"
                         property="og:title"
-                        content={show.name + ' | TV Bland'}
+                        content={`${show.name} | ${TITLE}`}
                     />
                     <meta
+                        key="og:description"
                         property="og:description"
                         content={`TV Bland page for information on ${show.name}`}
                     />
-                    <meta property="og:image" content={show.image.original} />
-                    <meta property="og:image:type" content="image/jpeg" />
+                    <meta
+                        key="og:image"
+                        property="og:image"
+                        content={show.image.original}
+                    />
+                    <meta
+                        key="og:image:type"
+                        property="og:image:type"
+                        content="image/jpeg"
+                    />
                 </Head>
             )}
 
-            <section className="show-layout-top bg">
+            <section className="show-layout-top">
                 <div className="show-layout-top__inner">
                     <h1 className="show-layout-top__heading">
                         <Link href="/">
@@ -191,7 +183,10 @@ export const ShowPage = ({
                                         value: show?.status || 'Not available'
                                     },
                                     {
-                                        key: 'Genres',
+                                        key:
+                                            show?.genres.length > 1
+                                                ? 'Genres'
+                                                : 'Genre',
                                         value: show?.genres.length
                                             ? show?.genres.join(', ')
                                             : 'Not available'

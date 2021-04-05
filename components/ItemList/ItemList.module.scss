@@ -49,18 +49,18 @@ $imageWidth: 58;
 
     &__item {
         display: flex;
-        // justify-content: space-between;
         align-items: center;
         height: #{$itemHeight}px;
         list-style-type: none;
+        line-height: 20px;
+        letter-spacing: 0.15px;
 
         @include media-breakpoint-up(sm) {
             border-bottom: solid 1px black;
             margin-bottom: 10px;
             padding-bottom: 10px;
+            letter-spacing: 0px;
         }
-
-        // &:last-child { border-bottom: none; }
 
         &__inner {
             flex: 1;
@@ -89,12 +89,11 @@ $imageWidth: 58;
         }
 
         &__value {
-            color: grey;
+            color: #8C8C8C8C;
             line-height: 1;
 
             @include media-breakpoint-up(sm) {
                 flex: 1;
-                // margin-right: 15px;
                 line-height: unset;
             }
         }
