@@ -1,0 +1,221 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TVShowPage page matches snapshot 1`] = `
+<DocumentFragment>
+  <section
+    class="show-layout-top"
+  >
+    <div
+      class="show-layout-top__inner"
+    >
+      <h1
+        class="show-layout-top__heading"
+      >
+        <a
+          class="show-layout-top__heading__anchor"
+          href="/"
+        >
+          TV Bland
+        </a>
+      </h1>
+      <div
+        class="grid-row"
+      >
+        <div
+          class="show-layout-top__image-wrap"
+        >
+          <img
+            alt="Elliott from Earth"
+            src="https://static.tvmaze.com/uploads/images/original_untouched/298/747331.jpg"
+          />
+        </div>
+        <div
+          class="show-layout-top__info-wrap"
+        >
+          <div
+            class="show-layout-top__rating"
+          >
+            Rating unavailable
+          </div>
+          <h2
+            class="show-layout-top__show-title"
+          >
+            Elliott from Earth
+          </h2>
+          <div
+            class="show-layout-top__summary"
+          >
+            <p>
+              <b>
+                Elliott from Earth
+              </b>
+               is a comedy animated series about a young boy who finds himself living on a gigantic spaceship, with all sorts of aliens from around the universe. It's a show about finding your place in the world, even if it's in outer space. Oh, and his best friend is a dinosaur.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section
+    class="show-layout-bottom"
+  >
+    <div
+      class="show-layout-top__inner"
+    >
+      <div
+        class="grid-row"
+      >
+        <div
+          class="show-layout-bottom__col"
+        >
+          <h3>
+            Show info
+          </h3>
+          <ul>
+            <li>
+              <div>
+                <div>
+                  Streamed on
+                </div>
+                <div>
+                  Cartoon Network
+                </div>
+              </div>
+            </li>
+            <li>
+              <div>
+                <div>
+                  Schedule
+                </div>
+                <div>
+                  Not available
+                </div>
+              </div>
+            </li>
+            <li>
+              <div>
+                <div>
+                  Status
+                </div>
+                <div>
+                  Running
+                </div>
+              </div>
+            </li>
+            <li>
+              <div>
+                <div>
+                  Genres
+                </div>
+                <div>
+                  Comedy, Science-Fiction
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div
+          class="show-layout-bottom__col"
+        >
+          <h3>
+            Starring
+          </h3>
+          <ul>
+            <li>
+              <div>
+                <img
+                  alt="Laura Vandervoort"
+                  src="https://static.tvmaze.com/uploads/images/medium_portrait/0/1751.jpg"
+                />
+              </div>
+              <div>
+                <div>
+                  Laura Vandervoort
+                </div>
+                <div>
+                  Elena Michaels
+                </div>
+              </div>
+            </li>
+            <li>
+              <div>
+                <img
+                  alt="Greyston Holt"
+                  src="https://static.tvmaze.com/uploads/images/medium_portrait/214/536036.jpg"
+                />
+              </div>
+              <div>
+                <div>
+                  Greyston Holt
+                </div>
+                <div>
+                  Clayton Danvers
+                </div>
+              </div>
+            </li>
+            <li>
+              <div>
+                <img
+                  alt="Greg Bryk"
+                  src="https://static.tvmaze.com/uploads/images/medium_portrait/36/90548.jpg"
+                />
+              </div>
+              <div>
+                <div>
+                  Greg Bryk
+                </div>
+                <div>
+                  Jeremy Danvers
+                </div>
+              </div>
+            </li>
+            <li>
+              <div>
+                <img
+                  alt="Steve Lund"
+                  src="https://static.tvmaze.com/uploads/images/medium_portrait/161/404443.jpg"
+                />
+              </div>
+              <div>
+                <div>
+                  Steve Lund
+                </div>
+                <div>
+                  Nick Sorrentino
+                </div>
+              </div>
+            </li>
+            <button>
+              Show more
+            </button>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer>
+    <div>
+      © TV Bland 2021 
+      <span>
+        |
+      </span>
+       
+      <a
+        href="#"
+      >
+        Cookies
+      </a>
+       
+      <span>
+        |
+      </span>
+       
+      <a
+        href="#"
+      >
+        Privacy
+      </a>
+    </div>
+  </footer>
+</DocumentFragment>
+`;

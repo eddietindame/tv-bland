@@ -63,6 +63,211 @@
         "nextepisode": {
           "href": "https://api.tvmaze.com/episodes/2042441"
         }
+      },
+
+      "_embedded": {
+        "cast": [
+          {
+            "person": {
+              "id": 172,
+              "url": "https://www.tvmaze.com/people/172/laura-vandervoort",
+              "name": "Laura Vandervoort",
+              "country": {
+                "name": "Canada",
+                "code": "CA",
+                "timezone": "America/Halifax"
+              },
+              "birthday": "1984-09-22",
+              "deathday": null,
+              "gender": "Female",
+              "image": {
+                "medium": "https://static.tvmaze.com/uploads/images/medium_portrait/0/1751.jpg",
+                "original": "https://static.tvmaze.com/uploads/images/original_untouched/0/1751.jpg"
+              },
+              "_links": {
+                "self": {
+                  "href": "https://api.tvmaze.com/people/172"
+                }
+              }
+            },
+            "character": {
+              "id": 125,
+              "url": "https://www.tvmaze.com/characters/125/bitten-elena-michaels",
+              "name": "Elena Michaels",
+              "image": {
+                "medium": "https://static.tvmaze.com/uploads/images/medium_portrait/0/16.jpg",
+                "original": "https://static.tvmaze.com/uploads/images/original_untouched/0/16.jpg"
+              },
+              "_links": {
+                "self": {
+                  "href": "https://api.tvmaze.com/characters/125"
+                }
+              }
+            },
+            "self": false,
+            "voice": false
+          },
+          {
+            "person": {
+              "id": 173,
+              "url": "https://www.tvmaze.com/people/173/greyston-holt",
+              "name": "Greyston Holt",
+              "country": {
+                "name": "Canada",
+                "code": "CA",
+                "timezone": "America/Halifax"
+              },
+              "birthday": "1985-09-30",
+              "deathday": null,
+              "gender": "Male",
+              "image": {
+                "medium": "https://static.tvmaze.com/uploads/images/medium_portrait/214/536036.jpg",
+                "original": "https://static.tvmaze.com/uploads/images/original_untouched/214/536036.jpg"
+              },
+              "_links": {
+                "self": {
+                  "href": "https://api.tvmaze.com/people/173"
+                }
+              }
+            },
+            "character": {
+              "id": 126,
+              "url": "https://www.tvmaze.com/characters/126/bitten-clayton-danvers",
+              "name": "Clayton Danvers",
+              "image": {
+                "medium": "https://static.tvmaze.com/uploads/images/medium_portrait/8/22148.jpg",
+                "original": "https://static.tvmaze.com/uploads/images/original_untouched/8/22148.jpg"
+              },
+              "_links": {
+                "self": {
+                  "href": "https://api.tvmaze.com/characters/126"
+                }
+              }
+            },
+            "self": false,
+            "voice": false
+          },
+          {
+            "person": {
+              "id": 174,
+              "url": "https://www.tvmaze.com/people/174/greg-bryk",
+              "name": "Greg Bryk",
+              "country": {
+                "name": "Canada",
+                "code": "CA",
+                "timezone": "America/Halifax"
+              },
+              "birthday": "1972-01-01",
+              "deathday": null,
+              "gender": "Male",
+              "image": {
+                "medium": "https://static.tvmaze.com/uploads/images/medium_portrait/36/90548.jpg",
+                "original": "https://static.tvmaze.com/uploads/images/original_untouched/36/90548.jpg"
+              },
+              "_links": {
+                "self": {
+                  "href": "https://api.tvmaze.com/people/174"
+                }
+              }
+            },
+            "character": {
+              "id": 127,
+              "url": "https://www.tvmaze.com/characters/127/bitten-jeremy-danvers",
+              "name": "Jeremy Danvers",
+              "image": {
+                "medium": "https://static.tvmaze.com/uploads/images/medium_portrait/0/17.jpg",
+                "original": "https://static.tvmaze.com/uploads/images/original_untouched/0/17.jpg"
+              },
+              "_links": {
+                "self": {
+                  "href": "https://api.tvmaze.com/characters/127"
+                }
+              }
+            },
+            "self": false,
+            "voice": false
+          },
+          {
+            "person": {
+              "id": 176,
+              "url": "https://www.tvmaze.com/people/176/steve-lund",
+              "name": "Steve Lund",
+              "country": {
+                "name": "Canada",
+                "code": "CA",
+                "timezone": "America/Halifax"
+              },
+              "birthday": "1989-01-09",
+              "deathday": null,
+              "gender": "Male",
+              "image": {
+                "medium": "https://static.tvmaze.com/uploads/images/medium_portrait/161/404443.jpg",
+                "original": "https://static.tvmaze.com/uploads/images/original_untouched/161/404443.jpg"
+              },
+              "_links": {
+                "self": {
+                  "href": "https://api.tvmaze.com/people/176"
+                }
+              }
+            },
+            "character": {
+              "id": 129,
+              "url": "https://www.tvmaze.com/characters/129/bitten-nick-sorrentino",
+              "name": "Nick Sorrentino",
+              "image": {
+                "medium": "https://static.tvmaze.com/uploads/images/medium_portrait/0/19.jpg",
+                "original": "https://static.tvmaze.com/uploads/images/original_untouched/0/19.jpg"
+              },
+              "_links": {
+                "self": {
+                  "href": "https://api.tvmaze.com/characters/129"
+                }
+              }
+            },
+            "self": false,
+            "voice": false
+          },
+          {
+            "person": {
+              "id": 192,
+              "url": "https://www.tvmaze.com/people/192/michael-xavier",
+              "name": "Michael Xavier",
+              "country": {
+                "name": "Canada",
+                "code": "CA",
+                "timezone": "America/Halifax"
+              },
+              "birthday": null,
+              "deathday": null,
+              "gender": "Male",
+              "image": {
+                "medium": "https://static.tvmaze.com/uploads/images/medium_portrait/160/401035.jpg",
+                "original": "https://static.tvmaze.com/uploads/images/original_untouched/160/401035.jpg"
+              },
+              "_links": {
+                "self": {
+                  "href": "https://api.tvmaze.com/people/192"
+                }
+              }
+            },
+            "character": {
+              "id": 130,
+              "url": "https://www.tvmaze.com/characters/130/bitten-logan-jonsen",
+              "name": "Logan Jonsen",
+              "image": {
+                "medium": "https://static.tvmaze.com/uploads/images/medium_portrait/8/22149.jpg",
+                "original": "https://static.tvmaze.com/uploads/images/original_untouched/8/22149.jpg"
+              },
+              "_links": {
+                "self": {
+                  "href": "https://api.tvmaze.com/characters/130"
+                }
+              }
+            },
+            "self": false,
+            "voice": false
+          }
+        ]
       }
     },
     "_links": {

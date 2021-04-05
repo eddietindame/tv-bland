@@ -1,0 +1,753 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Home page matches snapshot 1`] = `
+<DocumentFragment>
+  <section
+    class="home-layout-top"
+  >
+    <div
+      class="home-layout-top__inner"
+    >
+      <h1
+        class="home-layout-top__heading"
+      >
+        TV Bland
+      </h1>
+      <p
+        class="home-layout-top__blurb"
+      >
+        TV Show and web series database.
+        <br />
+        Create personalised schedules. Episode guide, cast, crew and character information.
+      </p>
+    </div>
+  </section>
+  <section
+    class="home-layout-bottom"
+  >
+    <div
+      class="home-layout-bottom__inner"
+    >
+      <h2
+        class="home-layout-bottom__heading"
+      >
+        Last Added Shows
+      </h2>
+      <div>
+        <div
+          class="grid-row"
+        >
+          <div
+            data-testid="SHOW_ITEM_FALLBACK_TEST_ID"
+          >
+            <div
+              class="aspect-ratio"
+            >
+              <span>
+                <span
+                  class="react-loading-skeleton css-1eg0sfo-skeletonStyles-Skeleton"
+                >
+                  ‌
+                </span>
+              </span>
+            </div>
+            <div>
+              <span>
+                <span
+                  class="react-loading-skeleton css-1eg0sfo-skeletonStyles-Skeleton"
+                >
+                  ‌
+                </span>
+              </span>
+            </div>
+            <p>
+              <span>
+                <span
+                  class="react-loading-skeleton css-1eg0sfo-skeletonStyles-Skeleton"
+                >
+                  ‌
+                </span>
+                <span
+                  class="react-loading-skeleton css-1eg0sfo-skeletonStyles-Skeleton"
+                >
+                  ‌
+                </span>
+              </span>
+            </p>
+          </div>
+          <div
+            data-testid="SHOW_ITEM_FALLBACK_TEST_ID"
+          >
+            <div
+              class="aspect-ratio"
+            >
+              <span>
+                <span
+                  class="react-loading-skeleton css-1eg0sfo-skeletonStyles-Skeleton"
+                >
+                  ‌
+                </span>
+              </span>
+            </div>
+            <div>
+              <span>
+                <span
+                  class="react-loading-skeleton css-1eg0sfo-skeletonStyles-Skeleton"
+                >
+                  ‌
+                </span>
+              </span>
+            </div>
+            <p>
+              <span>
+                <span
+                  class="react-loading-skeleton css-1eg0sfo-skeletonStyles-Skeleton"
+                >
+                  ‌
+                </span>
+                <span
+                  class="react-loading-skeleton css-1eg0sfo-skeletonStyles-Skeleton"
+                >
+                  ‌
+                </span>
+              </span>
+            </p>
+          </div>
+          <div
+            data-testid="SHOW_ITEM_FALLBACK_TEST_ID"
+          >
+            <div
+              class="aspect-ratio"
+            >
+              <span>
+                <span
+                  class="react-loading-skeleton css-1eg0sfo-skeletonStyles-Skeleton"
+                >
+                  ‌
+                </span>
+              </span>
+            </div>
+            <div>
+              <span>
+                <span
+                  class="react-loading-skeleton css-1eg0sfo-skeletonStyles-Skeleton"
+                >
+                  ‌
+                </span>
+              </span>
+            </div>
+            <p>
+              <span>
+                <span
+                  class="react-loading-skeleton css-1eg0sfo-skeletonStyles-Skeleton"
+                >
+                  ‌
+                </span>
+                <span
+                  class="react-loading-skeleton css-1eg0sfo-skeletonStyles-Skeleton"
+                >
+                  ‌
+                </span>
+              </span>
+            </p>
+          </div>
+          <div
+            data-testid="SHOW_ITEM_FALLBACK_TEST_ID"
+          >
+            <div
+              class="aspect-ratio"
+            >
+              <span>
+                <span
+                  class="react-loading-skeleton css-1eg0sfo-skeletonStyles-Skeleton"
+                >
+                  ‌
+                </span>
+              </span>
+            </div>
+            <div>
+              <span>
+                <span
+                  class="react-loading-skeleton css-1eg0sfo-skeletonStyles-Skeleton"
+                >
+                  ‌
+                </span>
+              </span>
+            </div>
+            <p>
+              <span>
+                <span
+                  class="react-loading-skeleton css-1eg0sfo-skeletonStyles-Skeleton"
+                >
+                  ‌
+                </span>
+                <span
+                  class="react-loading-skeleton css-1eg0sfo-skeletonStyles-Skeleton"
+                >
+                  ‌
+                </span>
+              </span>
+            </p>
+          </div>
+          <div
+            data-testid="SHOW_ITEM_FALLBACK_TEST_ID"
+          >
+            <div
+              class="aspect-ratio"
+            >
+              <span>
+                <span
+                  class="react-loading-skeleton css-1eg0sfo-skeletonStyles-Skeleton"
+                >
+                  ‌
+                </span>
+              </span>
+            </div>
+            <div>
+              <span>
+                <span
+                  class="react-loading-skeleton css-1eg0sfo-skeletonStyles-Skeleton"
+                >
+                  ‌
+                </span>
+              </span>
+            </div>
+            <p>
+              <span>
+                <span
+                  class="react-loading-skeleton css-1eg0sfo-skeletonStyles-Skeleton"
+                >
+                  ‌
+                </span>
+                <span
+                  class="react-loading-skeleton css-1eg0sfo-skeletonStyles-Skeleton"
+                >
+                  ‌
+                </span>
+              </span>
+            </p>
+          </div>
+          <div
+            data-testid="SHOW_ITEM_FALLBACK_TEST_ID"
+          >
+            <div
+              class="aspect-ratio"
+            >
+              <span>
+                <span
+                  class="react-loading-skeleton css-1eg0sfo-skeletonStyles-Skeleton"
+                >
+                  ‌
+                </span>
+              </span>
+            </div>
+            <div>
+              <span>
+                <span
+                  class="react-loading-skeleton css-1eg0sfo-skeletonStyles-Skeleton"
+                >
+                  ‌
+                </span>
+              </span>
+            </div>
+            <p>
+              <span>
+                <span
+                  class="react-loading-skeleton css-1eg0sfo-skeletonStyles-Skeleton"
+                >
+                  ‌
+                </span>
+                <span
+                  class="react-loading-skeleton css-1eg0sfo-skeletonStyles-Skeleton"
+                >
+                  ‌
+                </span>
+              </span>
+            </p>
+          </div>
+          <div
+            data-testid="SHOW_ITEM_FALLBACK_TEST_ID"
+          >
+            <div
+              class="aspect-ratio"
+            >
+              <span>
+                <span
+                  class="react-loading-skeleton css-1eg0sfo-skeletonStyles-Skeleton"
+                >
+                  ‌
+                </span>
+              </span>
+            </div>
+            <div>
+              <span>
+                <span
+                  class="react-loading-skeleton css-1eg0sfo-skeletonStyles-Skeleton"
+                >
+                  ‌
+                </span>
+              </span>
+            </div>
+            <p>
+              <span>
+                <span
+                  class="react-loading-skeleton css-1eg0sfo-skeletonStyles-Skeleton"
+                >
+                  ‌
+                </span>
+                <span
+                  class="react-loading-skeleton css-1eg0sfo-skeletonStyles-Skeleton"
+                >
+                  ‌
+                </span>
+              </span>
+            </p>
+          </div>
+          <div
+            data-testid="SHOW_ITEM_FALLBACK_TEST_ID"
+          >
+            <div
+              class="aspect-ratio"
+            >
+              <span>
+                <span
+                  class="react-loading-skeleton css-1eg0sfo-skeletonStyles-Skeleton"
+                >
+                  ‌
+                </span>
+              </span>
+            </div>
+            <div>
+              <span>
+                <span
+                  class="react-loading-skeleton css-1eg0sfo-skeletonStyles-Skeleton"
+                >
+                  ‌
+                </span>
+              </span>
+            </div>
+            <p>
+              <span>
+                <span
+                  class="react-loading-skeleton css-1eg0sfo-skeletonStyles-Skeleton"
+                >
+                  ‌
+                </span>
+                <span
+                  class="react-loading-skeleton css-1eg0sfo-skeletonStyles-Skeleton"
+                >
+                  ‌
+                </span>
+              </span>
+            </p>
+          </div>
+          <div
+            data-testid="SHOW_ITEM_FALLBACK_TEST_ID"
+          >
+            <div
+              class="aspect-ratio"
+            >
+              <span>
+                <span
+                  class="react-loading-skeleton css-1eg0sfo-skeletonStyles-Skeleton"
+                >
+                  ‌
+                </span>
+              </span>
+            </div>
+            <div>
+              <span>
+                <span
+                  class="react-loading-skeleton css-1eg0sfo-skeletonStyles-Skeleton"
+                >
+                  ‌
+                </span>
+              </span>
+            </div>
+            <p>
+              <span>
+                <span
+                  class="react-loading-skeleton css-1eg0sfo-skeletonStyles-Skeleton"
+                >
+                  ‌
+                </span>
+                <span
+                  class="react-loading-skeleton css-1eg0sfo-skeletonStyles-Skeleton"
+                >
+                  ‌
+                </span>
+              </span>
+            </p>
+          </div>
+          <div
+            data-testid="SHOW_ITEM_FALLBACK_TEST_ID"
+          >
+            <div
+              class="aspect-ratio"
+            >
+              <span>
+                <span
+                  class="react-loading-skeleton css-1eg0sfo-skeletonStyles-Skeleton"
+                >
+                  ‌
+                </span>
+              </span>
+            </div>
+            <div>
+              <span>
+                <span
+                  class="react-loading-skeleton css-1eg0sfo-skeletonStyles-Skeleton"
+                >
+                  ‌
+                </span>
+              </span>
+            </div>
+            <p>
+              <span>
+                <span
+                  class="react-loading-skeleton css-1eg0sfo-skeletonStyles-Skeleton"
+                >
+                  ‌
+                </span>
+                <span
+                  class="react-loading-skeleton css-1eg0sfo-skeletonStyles-Skeleton"
+                >
+                  ‌
+                </span>
+              </span>
+            </p>
+          </div>
+          <div
+            data-testid="SHOW_ITEM_FALLBACK_TEST_ID"
+          >
+            <div
+              class="aspect-ratio"
+            >
+              <span>
+                <span
+                  class="react-loading-skeleton css-1eg0sfo-skeletonStyles-Skeleton"
+                >
+                  ‌
+                </span>
+              </span>
+            </div>
+            <div>
+              <span>
+                <span
+                  class="react-loading-skeleton css-1eg0sfo-skeletonStyles-Skeleton"
+                >
+                  ‌
+                </span>
+              </span>
+            </div>
+            <p>
+              <span>
+                <span
+                  class="react-loading-skeleton css-1eg0sfo-skeletonStyles-Skeleton"
+                >
+                  ‌
+                </span>
+                <span
+                  class="react-loading-skeleton css-1eg0sfo-skeletonStyles-Skeleton"
+                >
+                  ‌
+                </span>
+              </span>
+            </p>
+          </div>
+          <div
+            data-testid="SHOW_ITEM_FALLBACK_TEST_ID"
+          >
+            <div
+              class="aspect-ratio"
+            >
+              <span>
+                <span
+                  class="react-loading-skeleton css-1eg0sfo-skeletonStyles-Skeleton"
+                >
+                  ‌
+                </span>
+              </span>
+            </div>
+            <div>
+              <span>
+                <span
+                  class="react-loading-skeleton css-1eg0sfo-skeletonStyles-Skeleton"
+                >
+                  ‌
+                </span>
+              </span>
+            </div>
+            <p>
+              <span>
+                <span
+                  class="react-loading-skeleton css-1eg0sfo-skeletonStyles-Skeleton"
+                >
+                  ‌
+                </span>
+                <span
+                  class="react-loading-skeleton css-1eg0sfo-skeletonStyles-Skeleton"
+                >
+                  ‌
+                </span>
+              </span>
+            </p>
+          </div>
+          <div
+            data-testid="SHOW_ITEM_FALLBACK_TEST_ID"
+          >
+            <div
+              class="aspect-ratio"
+            >
+              <span>
+                <span
+                  class="react-loading-skeleton css-1eg0sfo-skeletonStyles-Skeleton"
+                >
+                  ‌
+                </span>
+              </span>
+            </div>
+            <div>
+              <span>
+                <span
+                  class="react-loading-skeleton css-1eg0sfo-skeletonStyles-Skeleton"
+                >
+                  ‌
+                </span>
+              </span>
+            </div>
+            <p>
+              <span>
+                <span
+                  class="react-loading-skeleton css-1eg0sfo-skeletonStyles-Skeleton"
+                >
+                  ‌
+                </span>
+                <span
+                  class="react-loading-skeleton css-1eg0sfo-skeletonStyles-Skeleton"
+                >
+                  ‌
+                </span>
+              </span>
+            </p>
+          </div>
+          <div
+            data-testid="SHOW_ITEM_FALLBACK_TEST_ID"
+          >
+            <div
+              class="aspect-ratio"
+            >
+              <span>
+                <span
+                  class="react-loading-skeleton css-1eg0sfo-skeletonStyles-Skeleton"
+                >
+                  ‌
+                </span>
+              </span>
+            </div>
+            <div>
+              <span>
+                <span
+                  class="react-loading-skeleton css-1eg0sfo-skeletonStyles-Skeleton"
+                >
+                  ‌
+                </span>
+              </span>
+            </div>
+            <p>
+              <span>
+                <span
+                  class="react-loading-skeleton css-1eg0sfo-skeletonStyles-Skeleton"
+                >
+                  ‌
+                </span>
+                <span
+                  class="react-loading-skeleton css-1eg0sfo-skeletonStyles-Skeleton"
+                >
+                  ‌
+                </span>
+              </span>
+            </p>
+          </div>
+          <div
+            data-testid="SHOW_ITEM_FALLBACK_TEST_ID"
+          >
+            <div
+              class="aspect-ratio"
+            >
+              <span>
+                <span
+                  class="react-loading-skeleton css-1eg0sfo-skeletonStyles-Skeleton"
+                >
+                  ‌
+                </span>
+              </span>
+            </div>
+            <div>
+              <span>
+                <span
+                  class="react-loading-skeleton css-1eg0sfo-skeletonStyles-Skeleton"
+                >
+                  ‌
+                </span>
+              </span>
+            </div>
+            <p>
+              <span>
+                <span
+                  class="react-loading-skeleton css-1eg0sfo-skeletonStyles-Skeleton"
+                >
+                  ‌
+                </span>
+                <span
+                  class="react-loading-skeleton css-1eg0sfo-skeletonStyles-Skeleton"
+                >
+                  ‌
+                </span>
+              </span>
+            </p>
+          </div>
+          <div
+            data-testid="SHOW_ITEM_FALLBACK_TEST_ID"
+          >
+            <div
+              class="aspect-ratio"
+            >
+              <span>
+                <span
+                  class="react-loading-skeleton css-1eg0sfo-skeletonStyles-Skeleton"
+                >
+                  ‌
+                </span>
+              </span>
+            </div>
+            <div>
+              <span>
+                <span
+                  class="react-loading-skeleton css-1eg0sfo-skeletonStyles-Skeleton"
+                >
+                  ‌
+                </span>
+              </span>
+            </div>
+            <p>
+              <span>
+                <span
+                  class="react-loading-skeleton css-1eg0sfo-skeletonStyles-Skeleton"
+                >
+                  ‌
+                </span>
+                <span
+                  class="react-loading-skeleton css-1eg0sfo-skeletonStyles-Skeleton"
+                >
+                  ‌
+                </span>
+              </span>
+            </p>
+          </div>
+          <div
+            data-testid="SHOW_ITEM_FALLBACK_TEST_ID"
+          >
+            <div
+              class="aspect-ratio"
+            >
+              <span>
+                <span
+                  class="react-loading-skeleton css-1eg0sfo-skeletonStyles-Skeleton"
+                >
+                  ‌
+                </span>
+              </span>
+            </div>
+            <div>
+              <span>
+                <span
+                  class="react-loading-skeleton css-1eg0sfo-skeletonStyles-Skeleton"
+                >
+                  ‌
+                </span>
+              </span>
+            </div>
+            <p>
+              <span>
+                <span
+                  class="react-loading-skeleton css-1eg0sfo-skeletonStyles-Skeleton"
+                >
+                  ‌
+                </span>
+                <span
+                  class="react-loading-skeleton css-1eg0sfo-skeletonStyles-Skeleton"
+                >
+                  ‌
+                </span>
+              </span>
+            </p>
+          </div>
+          <div
+            data-testid="SHOW_ITEM_FALLBACK_TEST_ID"
+          >
+            <div
+              class="aspect-ratio"
+            >
+              <span>
+                <span
+                  class="react-loading-skeleton css-1eg0sfo-skeletonStyles-Skeleton"
+                >
+                  ‌
+                </span>
+              </span>
+            </div>
+            <div>
+              <span>
+                <span
+                  class="react-loading-skeleton css-1eg0sfo-skeletonStyles-Skeleton"
+                >
+                  ‌
+                </span>
+              </span>
+            </div>
+            <p>
+              <span>
+                <span
+                  class="react-loading-skeleton css-1eg0sfo-skeletonStyles-Skeleton"
+                >
+                  ‌
+                </span>
+                <span
+                  class="react-loading-skeleton css-1eg0sfo-skeletonStyles-Skeleton"
+                >
+                  ‌
+                </span>
+              </span>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer>
+    <div>
+      © TV Bland 2021 
+      <span>
+        |
+      </span>
+       
+      <a
+        href="#"
+      >
+        Cookies
+      </a>
+       
+      <span>
+        |
+      </span>
+       
+      <a
+        href="#"
+      >
+        Privacy
+      </a>
+    </div>
+  </footer>
+</DocumentFragment>
+`;
