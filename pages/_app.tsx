@@ -28,6 +28,7 @@ class MyApp extends App<any, any> {
                         content="text/html; charset=utf-8"
                     />
                     <meta name="referrer" content="always" />
+                    <meta name="description" content={DESC} />
                     <meta name="keywords" content={KEY_WORDS.join(' ')} />
 
                     <meta key="og:type" property="og:type" content="website" />
