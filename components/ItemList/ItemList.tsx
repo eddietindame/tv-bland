@@ -73,15 +73,20 @@ const ItemList: React.FunctionComponent<T.ItemListProps> = (
                 </li>
             ))}
             {!props.fallback && moreToShow && (
-                <button
-                    className={S['item-list__button']}
-                    onClick={showMore}
-                    onKeyPress={e => {
-                        if (e.key === 'Enter') showMore()
-                    }}
-                >
-                    Show more
-                </button>
+                <li key="button" className={classList([
+                    S['item-list__item'],
+                    S['item-list__item--button']
+                ])}>
+                    <button
+                        className={S['item-list__button']}
+                        onClick={showMore}
+                        onKeyPress={e => {
+                            if (e.key === 'Enter') showMore()
+                        }}
+                    >
+                        Show more
+                    </button>
+                </li>
             )}
         </ul>
     )
