@@ -1,6 +1,6 @@
 import React from 'react'
 
-import { render, fireEvent } from '@/testUtils'
+import { render, fireEvent, waitFor } from '@/testUtils'
 import ItemList from './ItemList'
 
 describe('ItemList', () => {
@@ -32,21 +32,23 @@ describe('ItemList', () => {
 
     it('renders images including fallback', () => {
         const baseUrl = 'http://localhost'
-        const items = Array(4).fill({
-            image: {
-                src: 'https://via.placeholder.com/210x295?text=nofallback',
-                alt: 'fallback'
-            },
-            key: 'fallback',
-            value: 'fallback'
-        })
+        const items = Array(4)
+            .fill('')
+            .map((_e, i) => ({
+                image: {
+                    src: 'https://via.placeholder.com/210x295?text=nofallback',
+                    alt: 'fallback'
+                },
+                key: 'fallback key ' + i,
+                value: 'fallback value ' + i
+            }))
         items[2] = {
             image: {
                 src: undefined,
                 alt: 'fallback'
             },
-            key: 'fallback',
-            value: 'fallback'
+            key: 'fallback key 2',
+            value: 'fallback value 2'
         }
         const { queryAllByRole } = render(<ItemList items={items} />)
         const images = queryAllByRole('img') as HTMLImageElement[]
@@ -61,19 +63,21 @@ describe('ItemList', () => {
         })
     })
 
-    it('shows more on button click', () => {
-        const items = Array(9).fill({
-            key: 'Test key',
-            value: 'Test value'
-        })
+    it('shows more on button click', async () => {
+        const items = Array(9)
+            .fill('')
+            .map((_e, i) => ({
+                key: 'Test key' + i,
+                value: 'Test value' + i
+            }))
         const { queryAllByText, getByRole } = render(<ItemList items={items} />)
         const button = getByRole('button')
         expect(button).toBeDefined()
-        expect(queryAllByText('Test key')).toHaveLength(4)
+        await waitFor(() => expect(queryAllByText(/Test key/i)).toHaveLength(4))
         fireEvent.click(button)
-        expect(queryAllByText('Test key')).toHaveLength(8)
+        await waitFor(() => expect(queryAllByText(/Test key/i)).toHaveLength(8))
         fireEvent.click(button)
-        expect(queryAllByText('Test key')).toHaveLength(9)
+        await waitFor(() => expect(queryAllByText(/Test key/i)).toHaveLength(9))
         expect(() => getByRole('button')).toThrow()
     })
 })

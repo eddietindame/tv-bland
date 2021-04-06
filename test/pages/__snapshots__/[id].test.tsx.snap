@@ -10,6 +10,7 @@ exports[`TVShowPage page matches snapshot 1`] = `
     >
       <h1
         class="show-layout-top__heading"
+        style="opacity: 0;"
       >
         <a
           class="show-layout-top__heading__anchor"
@@ -23,6 +24,7 @@ exports[`TVShowPage page matches snapshot 1`] = `
       >
         <div
           class="show-layout-top__image-wrap"
+          style="opacity: 0;"
         >
           <img
             alt="Elliott from Earth"
@@ -31,6 +33,7 @@ exports[`TVShowPage page matches snapshot 1`] = `
         </div>
         <div
           class="show-layout-top__info-wrap"
+          style="opacity: 0;"
         >
           <div
             class="show-layout-top__rating"
@@ -67,12 +70,15 @@ exports[`TVShowPage page matches snapshot 1`] = `
       >
         <div
           class="show-layout-bottom__col"
+          style="opacity: 0;"
         >
           <h3>
             Show info
           </h3>
           <ul>
-            <li>
+            <li
+              style="opacity: 0;"
+            >
               <div>
                 <div>
                   Streamed on
@@ -82,7 +88,9 @@ exports[`TVShowPage page matches snapshot 1`] = `
                 </div>
               </div>
             </li>
-            <li>
+            <li
+              style="opacity: 0;"
+            >
               <div>
                 <div>
                   Schedule
@@ -92,7 +100,9 @@ exports[`TVShowPage page matches snapshot 1`] = `
                 </div>
               </div>
             </li>
-            <li>
+            <li
+              style="opacity: 0;"
+            >
               <div>
                 <div>
                   Status
@@ -102,7 +112,9 @@ exports[`TVShowPage page matches snapshot 1`] = `
                 </div>
               </div>
             </li>
-            <li>
+            <li
+              style="opacity: 0;"
+            >
               <div>
                 <div>
                   Genres
@@ -116,12 +128,15 @@ exports[`TVShowPage page matches snapshot 1`] = `
         </div>
         <div
           class="show-layout-bottom__col"
+          style="opacity: 0;"
         >
           <h3>
             Starring
           </h3>
           <ul>
-            <li>
+            <li
+              style="opacity: 0;"
+            >
               <div>
                 <img
                   alt="Laura Vandervoort"
@@ -137,7 +152,9 @@ exports[`TVShowPage page matches snapshot 1`] = `
                 </div>
               </div>
             </li>
-            <li>
+            <li
+              style="opacity: 0;"
+            >
               <div>
                 <img
                   alt="Greyston Holt"
@@ -153,7 +170,9 @@ exports[`TVShowPage page matches snapshot 1`] = `
                 </div>
               </div>
             </li>
-            <li>
+            <li
+              style="opacity: 0;"
+            >
               <div>
                 <img
                   alt="Greg Bryk"
@@ -169,7 +188,9 @@ exports[`TVShowPage page matches snapshot 1`] = `
                 </div>
               </div>
             </li>
-            <li>
+            <li
+              style="opacity: 0;"
+            >
               <div>
                 <img
                   alt="Steve Lund"
@@ -185,9 +206,11 @@ exports[`TVShowPage page matches snapshot 1`] = `
                 </div>
               </div>
             </li>
-            <button>
-              Show more
-            </button>
+            <li>
+              <button>
+                Show more
+              </button>
+            </li>
           </ul>
         </div>
       </div>

@@ -4,6 +4,7 @@ import Link from 'next/link'
 import Image from 'next/image'
 import { useRouter } from 'next/router'
 import Skeleton from 'react-loading-skeleton'
+import { useTrail, animated } from '@react-spring/web'
 
 import { HOST, TITLE, KEY_WORDS } from '@/config'
 import { getShowWithCastById, formatSchedule } from '@/helpers/tvmaze'
@@ -36,6 +37,10 @@ export const ShowPage = ({
     show
 }: InferGetStaticPropsType<typeof getStaticProps>) => {
     const { isFallback } = useRouter()
+    const fadeTrail = useTrail(5, {
+        from: { opacity: 0 },
+        opacity: 1
+    })
 
     return (
         <>
@@ -90,16 +95,22 @@ export const ShowPage = ({
 
             <section className="show-layout-top">
                 <div className="show-layout-top__inner">
-                    <h1 className="show-layout-top__heading">
+                    <animated.h1
+                        className="show-layout-top__heading"
+                        style={fadeTrail[0]}
+                    >
                         <Link href="/">
                             <a className="show-layout-top__heading__anchor">
                                 TV Bland
                             </a>
                         </Link>
-                    </h1>
+                    </animated.h1>
 
                     <div className="grid-row">
-                        <div className="show-layout-top__image-wrap">
+                        <animated.div
+                            className="show-layout-top__image-wrap"
+                            style={fadeTrail[1]}
+                        >
                             {isFallback ? (
                                 <div className="aspect-ratio">
                                     <Skeleton />
@@ -116,8 +127,11 @@ export const ShowPage = ({
                                     height={1000}
                                 />
                             )}
-                        </div>
-                        <div className="show-layout-top__info-wrap">
+                        </animated.div>
+                        <animated.div
+                            className="show-layout-top__info-wrap"
+                            style={fadeTrail[2]}
+                        >
                             {isFallback ? (
                                 <>
                                     <div className="show-layout-top__rating show-layout-top__rating--fallback">
@@ -147,7 +161,7 @@ export const ShowPage = ({
                                     />
                                 </>
                             )}
-                        </div>
+                        </animated.div>
                     </div>
                 </div>
             </section>
@@ -155,7 +169,10 @@ export const ShowPage = ({
             <section className="show-layout-bottom">
                 <div className="show-layout-top__inner">
                     <div className="grid-row">
-                        <div className="show-layout-bottom__col">
+                        <animated.div
+                            className="show-layout-bottom__col"
+                            style={fadeTrail[3]}
+                        >
                             {isFallback ? (
                                 <h3 style={{ width: '40%' }}>
                                     <Skeleton />
@@ -195,8 +212,11 @@ export const ShowPage = ({
                                 fallback={isFallback}
                                 mobileGrid
                             />
-                        </div>
-                        <div className="show-layout-bottom__col">
+                        </animated.div>
+                        <animated.div
+                            className="show-layout-bottom__col"
+                            style={fadeTrail[4]}
+                        >
                             {isFallback ? (
                                 <h3 style={{ width: '40%' }}>
                                     <Skeleton />
@@ -219,20 +239,23 @@ export const ShowPage = ({
                                               key: cast.person.name,
                                               value: cast.character.name
                                           }))
-                                        : Array(4).fill({
-                                              image: {
-                                                  src: '/img/placeholder.jpg',
-                                                  alt: 'fallback'
-                                              },
-                                              key: 'fallback',
-                                              value: 'fallback'
-                                          })
+                                        : Array(4)
+                                              .fill('')
+                                              .map((_e, i) => ({
+                                                  image: {
+                                                      src:
+                                                          '/img/placeholder.jpg',
+                                                      alt: 'fallback'
+                                                  },
+                                                  key: 'fallback key ' + i,
+                                                  value: 'fallback value ' + i
+                                              }))
                                     // A fallback array is passed to give structure to the loading skeletons
                                     // This functionality could be refactored to not need the fallback array
                                 }
                                 fallback={isFallback}
                             />
-                        </div>
+                        </animated.div>
                     </div>
                 </div>
             </section>

@@ -10,11 +10,13 @@ exports[`Home page matches snapshot 1`] = `
     >
       <h1
         class="home-layout-top__heading"
+        style="opacity: 0;"
       >
         TV Bland
       </h1>
       <p
         class="home-layout-top__blurb"
+        style="opacity: 0;"
       >
         TV Show and web series database.
         <br />
@@ -24,6 +26,7 @@ exports[`Home page matches snapshot 1`] = `
   </section>
   <section
     class="home-layout-bottom"
+    style="opacity: 0;"
   >
     <div
       class="home-layout-bottom__inner"

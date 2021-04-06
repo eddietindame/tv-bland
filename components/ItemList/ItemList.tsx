@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import Image from 'next/image'
 import Skeleton from 'react-loading-skeleton'
+import { useTransition, animated } from '@react-spring/web'
 
 import { classList } from '@/helpers/util'
 import * as T from './ItemList.types'
@@ -13,6 +14,12 @@ const ItemList: React.FunctionComponent<T.ItemListProps> = (
     const [items, setItems] = useState(
         moreToShow ? props.items.slice(0, 4) : props.items
     )
+
+    const transitions = useTransition(items, {
+        keys: item => item.key,
+        from: { opacity: 0 },
+        enter: { opacity: 1 }
+    })
 
     const showMore = () => {
         const itemsLength = items.length + 4
@@ -28,8 +35,8 @@ const ItemList: React.FunctionComponent<T.ItemListProps> = (
                 props.mobileGrid && S['item-list--mobile-grid']
             ])}
         >
-            {items.map((item, i) => (
-                <li key={i} className={S['item-list__item']}>
+            {transitions((style, item) => (
+                <animated.li className={S['item-list__item']} style={style}>
                     {item.image && (
                         <div
                             className={classList([
@@ -70,13 +77,60 @@ const ItemList: React.FunctionComponent<T.ItemListProps> = (
                             {props.fallback ? <Skeleton /> : item.value}
                         </div>
                     </div>
-                </li>
+                </animated.li>
             ))}
+            {/* {items.map((item, i) => (
+                <animated.li key={i} className={S['item-list__item']} style={fadeTrail[0]}>
+                    {item.image && (
+                        <div
+                            className={classList([
+                                S['item-list__item__thumbnail'],
+                                props.fallback &&
+                                    S['item-list__item__thumbnail--fallback']
+                            ])}
+                        >
+                            {props.fallback ? (
+                                <Skeleton
+                                    circle={true}
+                                    height={58}
+                                    width={58}
+                                />
+                            ) : (
+                                <Image
+                                    src={
+                                        item.image.src || '/img/placeholder.jpg'
+                                    }
+                                    alt={item.image.alt}
+                                    layout="fill"
+                                    objectFit="cover"
+                                />
+                            )}
+                        </div>
+                    )}
+                    <div
+                        className={classList([
+                            S['item-list__item__inner'],
+                            props.fallback &&
+                                S['item-list__item__inner--fallback']
+                        ])}
+                    >
+                        <div className={S['item-list__item__key']}>
+                            {props.fallback ? <Skeleton /> : item.key}
+                        </div>
+                        <div className={S['item-list__item__value']}>
+                            {props.fallback ? <Skeleton /> : item.value}
+                        </div>
+                    </div>
+                </animated.li>
+            ))} */}
             {!props.fallback && moreToShow && (
-                <li key="button" className={classList([
-                    S['item-list__item'],
-                    S['item-list__item--button']
-                ])}>
+                <li
+                    key="button"
+                    className={classList([
+                        S['item-list__item'],
+                        S['item-list__item--button']
+                    ])}
+                >
                     <button
                         className={S['item-list__button']}
                         onClick={showMore}
